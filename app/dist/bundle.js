@@ -16,7 +16,7 @@
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _controllers_negociacao_controller_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./controllers/negociacao-controller.js */ \"./app/src/js/controllers/negociacao-controller.js\");\n\nconst controller = new _controllers_negociacao_controller_js__WEBPACK_IMPORTED_MODULE_0__.NegociacaoController();\nconst form = document.querySelector('.form');\nif (form) {\n    form.addEventListener('submit', event => {\n        event.preventDefault();\n        controller.adiciona();\n    });\n}\nelse {\n    throw Error('Não foi possível inicializar a aplicação. Verifique se o form existe.');\n}\n\nconst botaoImporta = document.querySelector('#botao-importa');\nif (botaoImporta) {\n    botaoImporta.addEventListener('click', () => {\n        controller.importaDados();\n    });\n} else {\n    throw Error('Botão importa não foi encontrado');\n}\n\n//# sourceURL=webpack://alurabank/./app/src/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _controllers_negociacao_controller_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./controllers/negociacao-controller.js */ \"./app/src/js/controllers/negociacao-controller.js\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.css */ \"./node_modules/bootstrap/dist/css/bootstrap.css\");\n\n\n\nconst controller = new _controllers_negociacao_controller_js__WEBPACK_IMPORTED_MODULE_0__.NegociacaoController();\nconst form = document.querySelector('.form');\nif (form) {\n    form.addEventListener('submit', event => {\n        event.preventDefault();\n        controller.adiciona();\n    });\n}\nelse {\n    throw Error('Não foi possível inicializar a aplicação. Verifique se o form existe.');\n}\n\nconst botaoImporta = document.querySelector('#botao-importa');\nif (botaoImporta) {\n    botaoImporta.addEventListener('click', () => {\n        controller.importaDados();\n    });\n} else {\n    throw Error('Botão importa não foi encontrado');\n}\n\n//# sourceURL=webpack://alurabank/./app/src/js/app.js?");
 
 /***/ }),
 
@@ -147,6 +147,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"View\": () => (/* binding */ View)\n/* harmony export */ });\nclass View {\n    constructor(seletor) {\n        const elemento = document.querySelector(seletor);\n        if (elemento) {\n            this.elemento = elemento;\n        }\n        else {\n            throw Error(`Seletor ${seletor} não existe no DOM. Verifique`);\n        }\n    }\n    update(model) {\n        let template = this.template(model);\n        this.elemento.innerHTML = template;\n    }\n}\n\n\n//# sourceURL=webpack://alurabank/./app/src/js/views/view.js?");
+
+/***/ }),
+
+/***/ "./node_modules/bootstrap/dist/css/bootstrap.css":
+/*!*******************************************************!*\
+  !*** ./node_modules/bootstrap/dist/css/bootstrap.css ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://alurabank/./node_modules/bootstrap/dist/css/bootstrap.css?");
 
 /***/ })
 
