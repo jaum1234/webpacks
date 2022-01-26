@@ -33,6 +33,7 @@ export class NegociacaoController {
         this.atualizaView();
     }
     importaDados() {
+        alert('oi');
         import('../services/negociacoes-service.js')
             .then(module => {
                 const negociacoesService = new module.NegociacoesService();

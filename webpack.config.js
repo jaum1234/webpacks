@@ -43,4 +43,8 @@ module.exports = {
         //    ]
         //})
     ],
+    devServer: {
+        static: path.resolve(__dirname, 'app/dist'),
+        port: 3000
+    }
 };
