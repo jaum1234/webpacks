@@ -36,6 +36,7 @@ module.exports = {
             filename: 'style.css'
         }),
         new webpack.optimize.ModuleConcatenationPlugin()
+        
         //new CopyWebpackPlugin({
         //    patterns: [
         //        { from: './app/src/css', to: 'css' }
